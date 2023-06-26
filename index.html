@@ -6,11 +6,12 @@
     <style>
         body {
             background-color: rgb(34, 34, 34);
+            font-family: system-ui;
             margin: 0;
             padding: 0;
         }
+
         h1 {
-            font-family: SourceSansBold, sans-serif;
             font-size: 7em;
             color: white;
             text-align: left;
@@ -20,10 +21,10 @@
             margin-bottom: 200px;
             padding-bottom: 10px;
             opacity: 0;
-            animation: fade-in 1s ease-out forwards;
+            animation: fade-in-h1 1s ease-out forwards;
         }
+
         p {
-            font-family: SourceSansBold, sans-serif;
             color: white;
             margin-top: 2vh;
             font-size: 1.5em;
@@ -31,13 +32,17 @@
             text-align: left;
             margin-bottom: 10px;
             opacity: 0;
-            animation: fade-in 1s ease-out forwards;
+            animation: fade-in-p 2s ease-out forwards;
         }
+
         .name {
             background: linear-gradient(to bottom right, rgb(255, 0, 255), rgb(206, 33, 191), rgb(170, 20, 163), rgb(127, 35, 212), rgb(99, 8, 165));
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
+            color: blue;
+            text-decoration: underline;
         }
+
         .icon {
             position: absolute;
             width: 50px;
@@ -46,47 +51,87 @@
             margin-right: 20px;
             margin-bottom: 5px;
         }
+
+        .note {
+            font-size: 15px;
+        }
+
         .youtube {
+            bottom: 3px;
             right: 0;
         }
+
         .github {
+            bottom: 3px;
             right: 70px;
         }
+
         .twitter {
+            bottom: 3px;
             right: 140px;
         }
+
         .discord {
+            bottom: 3px;
             right: 210px;
-            width: 63px;
+            width: 65px;
             height: 50px;
         }
-        @keyframes fade-in {
+
+        a[href="https://discord.gg/gmkJjqMD6Q"] {
+            color: rgb(0, 110, 255);
+        }
+
+        @keyframes fade-in-h1 {
             from {
                 opacity: 0;
                 transform: translateY(20px);
             }
+
             to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fade-in-p {
+            0% {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            50% {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            100% {
                 opacity: 1;
                 transform: translateY(0);
             }
         }
     </style>
 </head>
+
 <body>
-    <h1>Hello,<br>I am <span class="name">Roblify</span></h1>
-    <p>I am a 13 year old American who loves programming Discord bots and is in the process of learning JavaScript and discord.js,</p>
-    <p>as of right now I created the Discord bots of Searchify, and Dalton. My dream job is to be a programmer and have about 3 years of experience.</p>
-    <p>For more information, check out my socials or join my Discord server</p>
-    <p>I am experienced in the following programming languages:<br>Luau, TypeScript, JavaScript, HTML</p>
-    <a href="https://www.twitter.com/Roblify"><img class="icon twitter" src="https://cdn4.iconfinder.com/data/icons/social-messaging-ui-color-shapes-2-free/128/social-twitter-square2-512.png"></a>
-    <a href="https://github.com/Roblify"><img class="icon github" src="https://cdn3.iconfinder.com/data/icons/popular-services-brands/512/github-512.png"></a>
-    <a href="https://www.youtube.com/@Roblify"><img class="icon youtube" src="https://www.freeiconspng.com/uploads/hd-youtube-logo-png-transparent-background-20.png"></a>
-    <a href="https://discord.gg/pJaKkYQm8a"><img class="icon discord" src="Discord.png"></a>
-    <div style="position: absolute; top: 20px; right: 20px; font-family: 'SourceSansBolds', sans-serif; color: #ffffff; font-size: 1.5em;">
-        <img src="Discord.png" width="40" height="30" style="vertical-align: middle;">
-        Roblify#0001
-        <br>
-        <span style="display: inline-block; margin-left: 47px; font-size: 0.7em; margin-top: -1vh;">Contact me</span>
-    </div>    
+    <h1>Hello!<br>I am <span class="name">Roblify</span></h1>
+    <p>Welcome to my website, I am a 13 year old user currently living in the United States, I
+        have about<br>3 years of experience in programming, with the languages I mostly know being Roblox Luau, and JavaScript
+    </p>
+    <p>My current focus is to make Discord bots and soon enough more websites, I am going to go on to being a programmer
+        in the near future as my side job<br>I also own Bloxian Devs on Discord, which is a Roblox Developers server with
+        over 500 members, you can join it <a href="https://discord.gg/gmkJjqMD6Q">here</a></a></p>
+    <p>What really inspires me about programming is the work done at the end, it puts a smile on your face to see it all
+        working, along with the<br>feedback you get of people supporting your projects, with all the amazing people I've
+        met that motivated me, its been awesome.</p>
+    <p><span class="note">Note: This website is still in development, and so updates will be here soon.</span></p>
+    <p></p>
+    <a href="https://www.twitter.com/Roblify"><img class="icon twitter"
+            src="https://cdn4.iconfinder.com/data/icons/social-messaging-ui-color-shapes-2-free/128/social-twitter-square2-512.png"></a>
+    <a href="https://github.com/Roblify"><img class="icon github"
+            src="https://cdn3.iconfinder.com/data/icons/popular-services-brands/512/github-512.png"></a>
+    <a href="https://www.youtube.com/@Roblify"><img class="icon youtube"
+            src="https://www.freeiconspng.com/uploads/hd-youtube-logo-png-transparent-background-20.png"></a>
+    <a href="https://discord.gg/gmkJjqMD6Q"><img class="icon discord" src="Discord.png"></a>
 </body>
 </html>
