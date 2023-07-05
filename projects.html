@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Projects - Roblify</title>
+    <link rel="shortcut icon" type="x-icon" href="Hammer.png">
+    <style>
+        html {
+            color-scheme: dark black;
+        }
+
+        body {
+            font-family: system-ui;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            height: 100vh;
+            padding-top: 20px;
+            text-align: center;
+        }
+
+        .project-box {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: fit-content;
+            padding: 10px;
+            border-radius: 10px;
+            background-color: #f0f0f0;
+            cursor: pointer;
+            margin-top: 20vh;
+        }
+
+        .project-box:hover {
+            background-color: #e0e0e0;
+        }
+
+        .project-box img {
+            width: 60px;
+            height: 60px;
+            margin-right: 10px;
+            border-radius: 50%;
+        }
+
+        .project-box a {
+            text-decoration: none;
+            color: #000;
+            font-weight: bold;
+        }
+
+        .title {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .description {
+            font-size: 16px;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="content">
+        <div class="title">My Projects!</div>
+        <div class="description">
+            These are my past projects I have created for fun. As a programmer, I test my skills and enjoy building these projects.
+        </div>
+        <div class="project-box" onclick="location.href='https://coin-flipper.roblify.com';">
+            <img src="Heads.png" alt="Heads" />
+            <a href="https://coin-flipper.roblify.com">Flip a Coin</a>
+        </div>
+    </div>
+</body>
+</html>
