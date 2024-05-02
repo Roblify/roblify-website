@@ -1,27 +1,40 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta property="og:title" content="Roblify">
-    <meta property="og:description" content="Hello! I am Roblify  Welcome to my website, I am a 13 year old user currently living in the United States, I have about 3 years of experience in programming, with the languages I mostly know being Roblox Luau, and JavaScript ...">
-    <meta property="og:image" content="https://cdn.discordapp.com/attachments/1076345667598954567/1123017297687228467/New_Project_25.png">
+    <meta property="og:description"
+        content="Hello! I am Roblify  Welcome to my website, I am a 14 year old user currently living in the United States, I have about 3 years of experience in programming, with the languages I mostly know being Roblox Luau, and JavaScript ...">
+    <meta property="og:image"
+        content="https://cdn.discordapp.com/attachments/1076345667598954567/1123017297687228467/New_Project_25.png">
     <meta property="og:url" content="https://www.roblify.com/">
     <title>Roblify</title>
     <link rel="shortcut icon" type="x-icon" href="WebLogo.png">
     <style>
         body {
-            background-color: rgb(19, 19, 19);
+            background: linear-gradient(to bottom, rgb(81, 33, 120), rgb(21, 44, 128), rgb(16, 55, 143), rgb(32, 65, 162), rgb(54, 74, 179), rgb(80, 82, 192), rgb(107, 88, 199), rgb(135, 95, 201), rgb(164, 103, 197), rgb(192, 112, 188), rgb(219, 122, 174), rgb(242, 134, 157));
             font-family: system-ui;
             margin: 0;
             padding: 0;
+            color: white;
+            text-align: center;
+            animation: gradient-shift 15s linear infinite;
+        }
+
+        @keyframes gradient-shift {
+            0% {
+                background-position: 0% 0%;
+            }
+
+            100% {
+                background-position: 100% 100%;
+            }
         }
 
         h1 {
             font-size: 7em;
-            color: white;
-            text-align: left;
             margin-top: 20vh;
             line-height: 0.95;
-            margin-left: 4vw;
             margin-bottom: 200px;
             padding-bottom: 10px;
             opacity: 0;
@@ -29,12 +42,10 @@
         }
 
         p {
-            color: white;
-            margin-top: 2vh;
             font-size: 1.5em;
-            margin-left: 4vw;
-            text-align: left;
-            margin-bottom: 10px;
+            margin-left: auto;
+            margin-right: auto;
+            width: 80%;
             opacity: 0;
             animation: fade-in-p 2s ease-out forwards;
         }
@@ -48,41 +59,47 @@
         }
 
         .icon {
-            position: absolute;
             width: 50px;
             height: 50px;
-            top: 0;
-            margin-right: 5px;
             margin-top: 15px;
+            transition: transform 0.3s;
+        }
+
+        .twitter-icon {
+            width: 60px;
+        }
+
+        .github-icon {
+            width: 50px;
+        }
+
+        .icon:hover {
+            transform: scale(1.1);
         }
 
         .note {
             font-size: 15px;
         }
 
-        .github {
-            bottom: 3px;
-            right: 70px;
-            width: 40px;
-            height: 36px;
-            margin-right: 18px;
-            margin-top: 11px;
+        .projects {
+            margin-top: 50px;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
         }
 
-        .twitter {
-            bottom: 3px;
-            right: 140px;
-            width: 38px;
-            height: 30px;
-            margin-left: 20px;
+        .project-button {
+            background-color: rgba(255, 255, 255, 0.2);
+            border: none;
+            color: white;
+            padding: 10px 20px;
+            font-size: 1.2em;
+            cursor: pointer;
+            transition: background-color 0.3s;
         }
 
-        a[href="https://discord.gg/gmkJjqMD6Q"] {
-            color: rgb(201, 0, 167);
-        }
-
-        a[href="https://roblify.com/projects"] {
-            color: rgb(201, 0, 167);
+        .project-button:hover {
+            background-color: rgba(255, 255, 255, 0.4);
         }
 
         @keyframes fade-in-h1 {
@@ -118,21 +135,25 @@
 
 <body>
     <h1>Hello!<br>I am <span class="name">Roblify</span></h1>
-    <p>Greetings there, I am a 14 year old user currently living in the United States, I
-        have about<br>3 years of experience in programming, with the languages I mostly know being Roblox Luau, and JavaScript
-    </p>
+    <p>Greetings there, I am a 14 year old user currently living in the United States, I have about<br>4 years of
+        experience in programming, with the languages I mostly know being Roblox Luau, and JavaScript</p>
     <p>My current focus is to make Discord bots and soon enough more websites, I am going to go on to being a programmer
-        in the near future as my side job<br>I also own Bloxian Devs on Discord, which is a Roblox Developers server with
-        over 500 members, you can join it <a href="https://discord.gg/gmkJjqMD6Q">here</a></a></p>
+        in the near future as my side job<br>I also have a fan server on Discord, which is a fun community that gets
+        along well, you can join it <a href="https://discord.gg/JPUhuFPGkm">here</a></p>
     <p>What really inspires me about programming is the work done at the end, it puts a smile on your face to see it all
-        working, along with the<br>feedback you get of people supporting your projects, with all the amazing people I've
+        working, along with the feedback you get of people supporting your projects, with all the amazing people I've
         met that motivated me, its been awesome.</p>
-    <p>You can view my past projects <a href="https://roblify.com/projects">here!</a></p>
-    <p><span class="note">Note: This website is still in development, and so updates will be here soon.</span></p>
-    <p></p>
-    <a href="https://www.twitter.com/Roblify"><img class="icon twitter"
-            src="TwitterLogo.png"></a>
-    <a href="https://github.com/Roblify"><img class="icon github"
-            src="Github.png"></a>
+    <p><span class="note">Scroll down to see more...</span></p>
+    <br>
+    <h1>Visit my projects</h1>
+    <p>These below are projects I made that I personally love, my best ones are below</p>
+    <div class="projects">
+        <a href="https://iss-tracker.roblify.com" class="project-button">International Space Station Tracker</a>
+        <a href="https://voltonix.roblify.com" class="project-button">Voltonix - Discord Bot</a>
+        <a href="https://moon-phase.roblify.com" class="project-button">Moon Phase Website</a>
+    </div>
+    <a href="https://www.twitter.com/Roblify"><img class="icon twitter-icon" src="TwitterLogo.png"></a>
+    <a href="https://github.com/Roblify"><img class="icon github-icon" src="Github.png"></a>    
 </body>
+
 </html>
