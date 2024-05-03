@@ -48,6 +48,7 @@
             width: 80%;
             opacity: 0;
             animation: fade-in-p 2s ease-out forwards;
+            max-width: 60ch;
         }
 
         .name {
@@ -61,7 +62,8 @@
         .icon {
             width: 50px;
             height: 50px;
-            margin-top: 15px;
+            margin-top: 150px;
+            margin-bottom: 15px;
             transition: transform 0.3s;
         }
 
@@ -84,22 +86,37 @@
         .projects {
             margin-top: 50px;
             display: flex;
-            justify-content: center;
+            flex-direction: column;
+            align-items: center;
             gap: 20px;
         }
 
         .project-button {
+            display: flex;
+            align-items: center;
+            justify-content: center;
             background-color: rgba(255, 255, 255, 0.2);
             border: none;
-            color: white;
+            color: rgb(255, 255, 255);
             padding: 10px 20px;
+            background-color: rgb(232, 118, 255);
             font-size: 1.2em;
             cursor: pointer;
             transition: background-color 0.3s;
+            max-width: 80%;
+            text-align: left;
+            margin: 0 auto;
+            border-radius: 10px;
+        }
+
+        .project-icon {
+            width: 60px;
+            height: 60px;
+            margin-right: 10px;
         }
 
         .project-button:hover {
-            background-color: rgba(255, 255, 255, 0.4);
+            background-color: rgb(255, 127, 238);
         }
 
         @keyframes fade-in-h1 {
@@ -135,10 +152,10 @@
 
 <body>
     <h1>Hello!<br>I am <span class="name">Roblify</span></h1>
-    <p>Greetings there, I am a 14 year old user currently living in the United States, I have about<br>4 years of
+    <p>Greetings there, I am a 14 year old user currently living in the United States, I have about 4 years of
         experience in programming, with the languages I mostly know being Roblox Luau, and JavaScript</p>
     <p>My current focus is to make Discord bots and soon enough more websites, I am going to go on to being a programmer
-        in the near future as my side job<br>I also have a fan server on Discord, which is a fun community that gets
+        in the near future as my side job I also have a fan server on Discord, which is a fun community that gets
         along well, you can join it <a href="https://discord.gg/JPUhuFPGkm">here</a></p>
     <p>What really inspires me about programming is the work done at the end, it puts a smile on your face to see it all
         working, along with the feedback you get of people supporting your projects, with all the amazing people I've
@@ -148,12 +165,15 @@
     <h1>Visit my projects</h1>
     <p>These below are projects I made that I personally love, my best ones are below</p>
     <div class="projects">
-        <a href="https://iss-tracker.roblify.com" class="project-button">International Space Station Tracker</a>
-        <a href="https://voltonix.roblify.com" class="project-button">Voltonix - Discord Bot</a>
-        <a href="https://moon-phase.roblify.com" class="project-button">Moon Phase Website</a>
+        <a href="https://iss-tracker.roblify.com" class="project-button"><img src="ISS.png" class="project-icon">
+            International Space Station Tracker</a>
+        <a href="https://voltonix.roblify.com" class="project-button"><img src="Voltonix.png" class="project-icon">
+            Voltonix - Discord Bot</a>
+        <a href="https://moon-phase.roblify.com" class="project-button"><img src="Moon.png" class="project-icon"> Moon
+            Phase Website</a>
     </div>
     <a href="https://www.twitter.com/Roblify"><img class="icon twitter-icon" src="TwitterLogo.png"></a>
-    <a href="https://github.com/Roblify"><img class="icon github-icon" src="Github.png"></a>    
+    <a href="https://github.com/Roblify"><img class="icon github-icon" src="Github.png"></a>
 </body>
 
 </html>
